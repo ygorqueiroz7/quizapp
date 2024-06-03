@@ -106,10 +106,11 @@ main{
     background: var(--bg-css);
 }
 
-.botao_javascript{
+.botao_javascript div{
     background: var(--bg-javascript);
 }
 
-.botao_acessibilidade{
+.botao_acessibilidade div{
     background: var(--bg-acessibilidade);
 }
+.
