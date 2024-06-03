@@ -80,3 +80,36 @@ main{
     line-height: 150%;
     font-style: italic;
 }
+
+.assuntos{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.assuntos button{
+    border: none;
+    background: var(--button-bg);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+.botao_html div{
+    background: var(--bg-html);
+}
+
+.botao_css div{
+    background: var(--bg-css);
+}
+
+.botao_javascript{
+    background: var(--bg-javascript);
+}
+
+.botao_acessibilidade{
+    background: var(--bg-acessibilidade);
+}
