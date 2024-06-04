@@ -20,12 +20,31 @@
     --bg-mobile: url(./assets/images/pattern-background-mobile-light.svg);
     --bg-desktop: url(./assets/images/pattern-background-desktop-light.svg);
 }
+
+body.escuro {
+    --bg-color: #313e51;
+    --bg-mobile: url(./assets/images/pattern-background-mobile-dark.svg);
+    --bg-desktop: url(./assets/images/pattern-background-desktop-dark.svg);
+    --primary-text-color: #fff;
+    --button-bg #3b4d66;
+    --secondary-text-color: #abc1e1;
+    --shadow: 0px 16px 40px 0px rgba(49, 62, 81, 0.14);
+}
+
 body {
     height: 100svh;
-    background-color: var(--bg-color);
+    background-color: var(--bg-mobile) var(--bg-color);
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+header {
+        padding: 16px 24px;
+        display: flex;
+        justify-content: flex-end;
+    
+}
+
 @media (max-width: 768px) {
     body {
         background-image: var(--bg-mobile);
@@ -38,11 +57,7 @@ body {
     }
 }
 
-header {
-    padding: 16px 24px;
-    display: flex;
-    justify-content: flex-end;
-}
+
 .tema {
     padding: 8px 0px;
     display: flex;
