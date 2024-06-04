@@ -163,7 +163,14 @@ main {
     cursor: pointer;
 }
 
-.alternativas label:has(input:checked)
+.alternativas label:has(input:checked) {
+    outline: 3px solid var(--purple);
+
+    & span {
+        background-color: var(--purple);
+        color: var(--white);
+    }
+}
 
 .alternativas input {
     display: none;
