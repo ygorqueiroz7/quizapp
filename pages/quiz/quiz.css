@@ -26,6 +26,7 @@
     --bg-mobile: url(../../assets/images/pattern-background-mobile-light.svg);
     --bg-desktop: url(../../assets/images/pattern-background-desktop-light.svg);
 }
+
 body.escuro{
     --bg-color: #313e51;
     --color-span: #313e51;
@@ -36,7 +37,6 @@ body.escuro{
     --button-bg: #3b4d66;
     --shadow: 0px 16px 0px 0px rgba(49, 62, 81, 0.14);
 }
-
 
 body {
     height: 100svh;
@@ -58,20 +58,32 @@ header {
 }
 
 .assunto_icone {
-    background: var(--bg-acessibilidade);
     width: 40px;
     height: 40px;
     padding: 5px;
     border-radius: 5px;
 }
 
-.assunto_icone {
-    background: var(--bg-acessibilidade);
-    width: 40px;
-    height: 40px;
-    padding: 5px;
-    border-radius: 5px;
+
+.assunto_icone.html {
+    background: var(--bg-html);
 }
+
+
+.assunto_icone.css {
+    background: var(--bg-css);
+}
+
+
+.assunto_icone.javascript {
+    background: var(--bg-javascript);
+}
+
+
+.assunto_icone.acessibilidade {
+    background: var(--bg-acessibilidade);
+}
+
 
 .assunto_icone img {
     width: 100%;
@@ -127,6 +139,7 @@ main {
     margin-bottom: 12px;
 }
 
+
 .pergunta h2 {
     font-size: 20px;
     font-weight: 500;
@@ -168,17 +181,18 @@ main {
     cursor: pointer;
 }
 
+
 .alternativas label:hover {
     & span {
         background: var(--bg-acessibilidade);
         color: var(--purple);
     }
 }
+
 .alternativas label:has(input:checked) {
     outline: 3px solid var(--purple);
-
     & span {
-        background-color: var(--purple);
+        background: var(--purple);
         color: var(--white);
     }
 }
@@ -245,7 +259,7 @@ main {
         background-size: cover;
         background-repeat: no-repeat;
     }
-    
+
     header {
         margin-block: 81px;
         max-width: 1160px;
@@ -261,17 +275,20 @@ main {
     .assunto h1 {
         font-size: 28px;
     }
-
+    
     .tema {
         gap: 16px;
     }
+
     .tema img {
         width: 24px;
     }
+
     .tema button {
         width: 48px;
         height: 28px;
     }
+
     .tema button div {
         width: 20px;
         height: 20px;
@@ -293,7 +310,6 @@ main {
         flex-direction: column;
         justify-content: space-between;
     }
-    
 
     .pergunta p {
         font-size: 20px;
@@ -301,35 +317,13 @@ main {
         margin-bottom: 27px;
     }
 
-    
     .pergunta h2 {
         font-size: 36px;
         line-height: 42px;
     }
-    
+
     .alternativas form {
         gap: 24px;
         margin-bottom: 24px;
     }
-    
-    .alternativas label {
-        font-size: 22px;
-        padding: 18px 20px;
-        border-radius: 24px;
-    }
-
-    .alternativas div {
-        gap: 32px;
-    }
-
-    .alternativas div span {
-        width: 56px;
-        height: 56px;
-        font-size: 28px;
-    }
-
-    .alternativas button {
-        font-size: 22px;
-    }
-
-}
+}    
