@@ -117,8 +117,8 @@ main {
     border-radius: 12px;
     box-shadow: var(--shadow);
     font-size: 18px;
-    font-weight: 500;
-    color: var(--primary-text-color)
+    color: var(--primary-text-color);
+    cursor: pointer;
 }
 
 .assuntos button div {
