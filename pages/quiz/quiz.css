@@ -89,9 +89,11 @@ header {
     align-items: center;
     gap: 8px;
 }
+
 .tema img {
     width: 16px;
 }
+
 .tema button {
     height: 20px;
     width: 32px;
@@ -99,7 +101,10 @@ header {
     border: 0;
     border-radius: 999px;
     padding: 4px;
+    display: flex;
+    cursor: pointer;
 }
+
 .tema button div {
     background: var(--white);
     width: 12px;

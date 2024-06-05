@@ -4,7 +4,7 @@ export function trocarTema(body, botaoTema) {
     if (localStorage.getItem("tema")) {
         tema = localStorage.getItem("tema")
     }
-
+    
     if (tema === "claro") {
         body.classList.add("escuro")
         localStorage.setItem("tema", "escuro")
@@ -25,4 +25,5 @@ export function verificarTema(body, botaoTema) {
         body.classList.add("escuro")
         botaoTema.style.justifyContent = "flex-end"
     }
+
 }
