@@ -20,11 +20,10 @@
     --bg-javascript: #ebf0ff;
     --bg-acessibilidade: #f6e7ff;
     --white: #fff;
-    --green: #26d782;
-    --red: #ee5454;
     --bg-mobile: url(../../assets/images/pattern-background-mobile-light.svg);
     --bg-desktop: url(../../assets/images/pattern-background-desktop-light.svg);
 }
+
 body.escuro{
     --bg-color: #313e51;
     --color-span: #313e51;
@@ -35,22 +34,26 @@ body.escuro{
     --pontuacao-bg: #3b4d66;
     --shadow: 0px 16px 0px 0px rgba(49, 62, 81, 0.14);
 }
+
 body {
     height: 100svh;
     background: var(--bg-mobile) var(--bg-color);
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 header {
     display: flex;
     justify-content: space-between;
     padding: 16px 24px;
 }
+
 .assunto {
     display: flex;
     align-items: center;
     gap: 16px;
 }
+
 .assunto_icone {
     background: var(--bg-acessibilidade);
     width: 40px;
@@ -58,23 +61,28 @@ header {
     padding: 5px;
     border-radius: 5px;
 }
+
 .assunto_icone img {
     width: 100%;
 }
+
 .assunto h1 {
     font-size: 18px;
     font-weight: 500;
     color: var(--primary-text-color);
 }
+
 .tema {
     padding: 8px 0;
     display: flex;
     align-items: center;
     gap: 8px;
 }
+
 .tema img {
     width: 16px;
 }
+
 .tema button {
     height: 20px;
     width: 32px;
@@ -83,6 +91,7 @@ header {
     border-radius: 999px;
     padding: 4px;
 }
+
 .tema button div {
     background: var(--white);
     width: 12px;
@@ -114,6 +123,7 @@ main h2 strong {
     gap: 16px;
     border-radius: 12px;
     margin-bottom: 12px;
+    box-shadow: var(--shadow);
 }
 
 .pontuação strong {
@@ -121,7 +131,6 @@ main h2 strong {
     color: var(--primary-text-color);
     font-weight: 500;
 }
-
 
 .pontuação p {
     color: var(--secondary-text-color);
@@ -138,6 +147,7 @@ main button {
     font-size: 18px;
     font-weight: 500;
     transition: background 0.3s;
+    box-shadow: var(--shadow);
 }
 
 main button:hover {
@@ -145,40 +155,47 @@ main button:hover {
     cursor: pointer;
 }
 
-
 @media(min-width: 1100px) {
     body {
         background: var(--bg-desktop) var(--bg-color);
         background-size: cover;
         background-repeat: no-repeat;
     }
+
     header {
         margin-block: 81px;
         max-width: 1160px;
         margin-inline: auto;
     }
+
     .assunto_icone {
         width: 56px;
         height: 56px;
         padding: 8px;
     }
+
     .assunto h1 {
         font-size: 28px;
     }
+
     .tema {
         gap: 16px;
     }
+
     .tema img {
         width: 24px;
     }
+
     .tema button {
         width: 48px;
         height: 28px;
     }
+
     .tema button div {
         width: 20px;
         height: 20px;
     }
+
     main {
         display: flex;
         gap: 140px;
@@ -214,4 +231,3 @@ main button:hover {
         border-radius: 24px;
     }
 }
-  
