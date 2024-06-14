@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -76,11 +76,10 @@ header {
     background: var(--bg-acessibilidade);
 }
 
-
-
 .assunto_icone img {
     width: 100%;
 }
+
 .assunto h1 {
     font-size: 18px;
     font-weight: 500;
@@ -92,9 +91,11 @@ header {
     align-items: center;
     gap: 8px;
 }
+
 .tema img {
     width: 16px;
 }
+
 .tema button {
     height: 20px;
     width: 32px;
@@ -111,18 +112,22 @@ header {
     height: 12px;
     border-radius: 999px;
 }
+
 main {
     padding: 32px 24px;
 }
+
 main h2 {
     font-size: 40px;
     font-weight: 300;
     color: var(--primary-text-color);
     margin-bottom: 40px;
 }
+
 main h2 strong {
     font-weight: 500;
 }
+
 .pontuacao {
     background: var(--pontuacao-bg);
     padding: 32px;
@@ -134,15 +139,18 @@ main h2 strong {
     margin-bottom: 12px;
     box-shadow: var(--shadow);
 }
+
 .pontuacao strong {
     font-size: 88px;
     color: var(--primary-text-color);
     font-weight: 500;
 }
+
 .pontuacao p {
     color: var(--secondary-text-color);
     font-size: 18px;
 }
+
 main button {
     padding: 16px;
     border-radius: 12px;
@@ -155,63 +163,78 @@ main button {
     transition: background 0.3s;
     box-shadow: var(--shadow);
 }
+
 main button:hover {
     background: var(--purple-hover);
     cursor: pointer;
 }
+
 @media(min-width: 1100px){
     body {
         background: var(--bg-desktop) var(--bg-color);
         background-size: cover;
         background-repeat: no-repeat;
     }
+
     header {
         margin-block: 81px;
         max-width: 1160px;
         margin-inline: auto;
     }
+
     .assunto_icone {
         width: 56px;
         height: 56px;
         padding: 8px;
     }
+
     .assunto h1 {
         font-size: 28px;
     }
+
     .tema {
         gap: 16px
     }
+
     .tema img {
         width: 24px;
     }
+
     .tema button {
         width: 48px;
         height: 28px;
     }
+
     .tema button div {
         width: 20px;
         height: 20px;
     }
-    main{
+
+    main {
         display: flex;
         gap: 140px;
         max-width: 1160px;
         margin-inline: auto;
     }
+
     main h2,
     main div {
         width: 100%;
     }
+
     main h2 {
         font-size: 64px;
     }
+
     .pontuacao {
         border-radius: 24px ;
         margin-bottom: 32px;
     }
+
     .pontuacao strong {
         font-size: 144px;
     }
+    
     .pontuacao p {
         font-size: 24px;
     }
